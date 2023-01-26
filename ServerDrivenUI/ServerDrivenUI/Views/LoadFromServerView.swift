@@ -26,10 +26,7 @@ struct LoadFromServerView: View {
     }
     .task {
       do {
-        guard let url = Bundle.main.url(forResource: "codableViews", withExtension: "json") else { return }
-        let (data, response) = try await URLSession.shared.data(from: url)
-        print(response)
-        self.codableView = try JSONDecoder().decode(CodableView.self, from: data)
+        self.codableView = try await NetworkManager.load(urlString: Urls.viewUrl)
       } catch {
         debugPrint(error.localizedDescription)
       }

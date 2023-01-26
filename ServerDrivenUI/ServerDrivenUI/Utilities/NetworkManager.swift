@@ -8,6 +8,10 @@
 import Foundation
 import Combine
 
+enum Urls {
+  static let viewUrl = "https://raw.githubusercontent.com/wiseguy16/Server-Driven-UI/main/ServerDrivenUI/ServerDrivenUI/codableViews.json"
+}
+
 class NetworkManager {
   
   static func load<T: Codable>(urlString: String) async throws -> T {
