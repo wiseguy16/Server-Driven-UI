@@ -1,0 +1,134 @@
+{
+  "type": "vStack",
+  "id" : "5A68C1BD-66C4-4F8E-96CF-11E20C036474",
+  "views" : [
+    {
+      "type" : "spacer",
+      "id" : "EFB68A3F-69E1-4CDD-B294-42BDE8075B6D",
+      "height" : 100
+    },
+    {
+      "alignment" : "center",
+      "id" : "71D8F98B-1389-4698-B9FA-3CF40048C39A",
+      "content" : "WELCOME to SWIFTUI for JSON!!!",
+      "padding" : 0,
+      "type" : "text"
+    },
+    {
+      "type" : "spacer",
+      "id" : "4CE11465-7BC9-4927-A148-107AEC8F1563",
+      "height" : 10
+    },
+    {
+      "type" : "systemImage",
+      "name" : "person.circle",
+      "height" : 100
+    },
+    {
+      "alignment" : "center",
+      "id" : "64021F10-8DB7-456D-B939-6998CBB05DCB",
+      "content" : "JOHNNY APPLSEED",
+      "padding" : 0,
+      "type" : "text"
+    },
+    {
+      "alignment" : "center",
+      "id" : "F87D101F-DC13-416F-A502-766E8539BBD3",
+      "content" : "SwiftUI.View: Codable - Transforming SwiftUI to JSON (and vice-versa) for a fully backend driven UI",
+      "padding" : 20,
+      "type" : "text"
+    },
+    {
+      "id" : "2B97C038-EBC1-48D9-A273-E82CB2950FEB",
+      "padding" : 20,
+      "type" : "hStack",
+      "views" : [
+        {
+          "type" : "color",
+          "id" : "3AF6F4A9-7067-4785-B500-9618D1A1FC64",
+          "content" : "red"
+        },
+        {
+          "type" : "color",
+          "id" : "C41240D1-A8D2-4E60-AA2C-FA3CAF829EDE",
+          "content" : "orange"
+        },
+        {
+          "type" : "color",
+          "id" : "B96A56A5-D270-4991-B0F5-598D99422474",
+          "content" : "yellow"
+        },
+        {
+          "type" : "color",
+          "id" : "589EAE69-FA7D-4343-A03D-C3678E416D2C",
+          "content" : "green"
+        },
+        {
+          "type" : "color",
+          "id" : "EF696E1A-8629-4A10-B364-CC397304271F",
+          "content" : "blue"
+        },
+        {
+          "type" : "color",
+          "id" : "AD6955B2-C053-4F2C-B80F-E44297DC8CA1",
+          "content" : "indigo"
+        },
+        {
+          "type" : "color",
+          "id" : "EFB58FF6-C780-4449-AD46-D529092854D2",
+          "content" : "purple"
+        }
+      ]
+    },
+    {
+      "alignment" : "center",
+      "lineLimit" : 4,
+      "title" : "type anything here",
+      "type" : "textField"
+    },
+    {
+      "id" : "64964CC2-4693-4EE8-9D2F-C07038DFDCDC",
+      "padding" : 0,
+      "type" : "hStack",
+      "views" : [
+        {
+          "type" : "spacer",
+          "id" : "9A0501AF-4535-4C1E-8E77-83FAB81F002E",
+          "height" : 20
+        },
+        {
+          "type" : "systemImage",
+          "name" : "sparkle",
+          "height" : 50
+        },
+        {
+          "type" : "spacer",
+          "id" : "245D48B6-14DE-4D0F-9DD4-4332290FCD24",
+          "width" : 40
+        },
+        {
+          "type" : "systemImage",
+          "name" : "globe.americas",
+          "height" : 100
+        },
+        {
+          "type" : "spacer",
+          "id" : "0E21DF75-658B-40E1-ACBC-A0F60FF5B400",
+          "width" : 40
+        },
+        {
+          "type" : "systemImage",
+          "name" : "sun.max",
+          "height" : 50
+        },
+        {
+          "type" : "spacer",
+          "id" : "05A00B97-3B40-43D1-A60A-3B082D316C73",
+          "height" : 20
+        }
+      ]
+    }
+
+  ],
+  "padding" : 0
+}
