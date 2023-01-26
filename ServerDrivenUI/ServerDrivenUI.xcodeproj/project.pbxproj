@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4AF580FC2983016D0039254A /* ServerDrivenUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF580FB2983016D0039254A /* ServerDrivenUIApp.swift */; };
-		4AF580FE2983016D0039254A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF580FD2983016D0039254A /* ContentView.swift */; };
 		4AF58100298301710039254A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF580FF298301710039254A /* Assets.xcassets */; };
 		4AF58103298301710039254A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF58102298301710039254A /* Preview Assets.xcassets */; };
 		4AF5810D298301720039254A /* ServerDrivenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5810C298301720039254A /* ServerDrivenUITests.swift */; };
@@ -58,7 +57,6 @@
 /* Begin PBXFileReference section */
 		4AF580F82983016D0039254A /* ServerDrivenUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerDrivenUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF580FB2983016D0039254A /* ServerDrivenUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDrivenUIApp.swift; sourceTree = "<group>"; };
-		4AF580FD2983016D0039254A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AF580FF298301710039254A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF58102298301710039254A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AF58108298301720039254A /* ServerDrivenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerDrivenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +113,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A05591F2983045900E7DD85 /* CodableViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4AF5812D2983021B0039254A /* HStack+Codable.swift */,
+				4AF5812C2983021B0039254A /* VStack+Codable.swift */,
+				4AF581382983021D0039254A /* Button+Codable.swift */,
+				4AF581312983021C0039254A /* Color+Codable.swift */,
+				4AF581332983021C0039254A /* Image+Codable.swift */,
+				4AF5813A2983021E0039254A /* List+Codable.swift */,
+				4AF581342983021C0039254A /* NavigationStack+Codable.swift */,
+				4AF581352983021D0039254A /* Spacer+Codable.swift */,
+				4AF58126298302190039254A /* Text+Codable.swift */,
+				4AF581282983021A0039254A /* TextAlignment+Codable.swift */,
+				4AF581272983021A0039254A /* TextField+Codable.swift */,
+				4AF581372983021D0039254A /* Other+Codable.swift */,
+			);
+			path = CodableViewComponents;
+			sourceTree = "<group>";
+		};
+		4A055920298304BD00E7DD85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AF5812E2983021B0039254A /* ScratchView.swift */,
+				4AF5812F2983021C0039254A /* LoadFromServerView.swift */,
+				4AF581322983021C0039254A /* SplittingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A055921298304F300E7DD85 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4AF581292983021A0039254A /* FileMonitor.swift */,
+				4AF5812A2983021A0039254A /* UUIDs.swift */,
+				4AF581392983021D0039254A /* RawString.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4A0559222983052A00E7DD85 /* CoreCodableViews */ = {
+			isa = PBXGroup;
+			children = (
+				4AF58125298302190039254A /* CodableView.swift */,
+				4AF581302983021C0039254A /* EncodableView.swift */,
+				4AF5812B2983021B0039254A /* ViewFactory.swift */,
+			);
+			path = CoreCodableViews;
+			sourceTree = "<group>";
+		};
 		4AF580EF2983016D0039254A = {
 			isa = PBXGroup;
 			children = (
@@ -139,29 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				4AF580FB2983016D0039254A /* ServerDrivenUIApp.swift */,
-				4AF580FD2983016D0039254A /* ContentView.swift */,
-				4AF581382983021D0039254A /* Button+Codable.swift */,
-				4AF58125298302190039254A /* CodableView.swift */,
+				4A0559222983052A00E7DD85 /* CoreCodableViews */,
+				4A05591F2983045900E7DD85 /* CodableViewComponents */,
+				4A055920298304BD00E7DD85 /* Views */,
+				4A055921298304F300E7DD85 /* Utilities */,
 				4AF581362983021D0039254A /* codableViews.json */,
-				4AF581312983021C0039254A /* Color+Codable.swift */,
-				4AF581302983021C0039254A /* EncodableView.swift */,
-				4AF581292983021A0039254A /* FileMonitor.swift */,
-				4AF5812D2983021B0039254A /* HStack+Codable.swift */,
-				4AF581332983021C0039254A /* Image+Codable.swift */,
-				4AF5813A2983021E0039254A /* List+Codable.swift */,
-				4AF5812F2983021C0039254A /* LoadFromServerView.swift */,
-				4AF581342983021C0039254A /* NavigationStack+Codable.swift */,
-				4AF581372983021D0039254A /* Other+Codable.swift */,
-				4AF581392983021D0039254A /* RawString.swift */,
-				4AF5812E2983021B0039254A /* ScratchView.swift */,
-				4AF581352983021D0039254A /* Spacer+Codable.swift */,
-				4AF581322983021C0039254A /* SplittingView.swift */,
-				4AF58126298302190039254A /* Text+Codable.swift */,
-				4AF581282983021A0039254A /* TextAlignment+Codable.swift */,
-				4AF581272983021A0039254A /* TextField+Codable.swift */,
-				4AF5812A2983021A0039254A /* UUIDs.swift */,
-				4AF5812B2983021B0039254A /* ViewFactory.swift */,
-				4AF5812C2983021B0039254A /* VStack+Codable.swift */,
 				4AF580FF298301710039254A /* Assets.xcassets */,
 				4AF58101298301710039254A /* Preview Content */,
 			);
@@ -328,7 +357,6 @@
 				4AF581492983021E0039254A /* Image+Codable.swift in Sources */,
 				4AF581502983021E0039254A /* List+Codable.swift in Sources */,
 				4AF581402983021E0039254A /* UUIDs.swift in Sources */,
-				4AF580FE2983016D0039254A /* ContentView.swift in Sources */,
 				4AF581452983021E0039254A /* LoadFromServerView.swift in Sources */,
 				4AF5813B2983021E0039254A /* CodableView.swift in Sources */,
 				4AF581462983021E0039254A /* EncodableView.swift in Sources */,
