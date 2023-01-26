@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A05592429830AD500E7DD85 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A05592329830AD400E7DD85 /* NetworkManager.swift */; };
 		4AF580FC2983016D0039254A /* ServerDrivenUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF580FB2983016D0039254A /* ServerDrivenUIApp.swift */; };
 		4AF58100298301710039254A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF580FF298301710039254A /* Assets.xcassets */; };
 		4AF58103298301710039254A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF58102298301710039254A /* Preview Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A05592329830AD400E7DD85 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4AF580F82983016D0039254A /* ServerDrivenUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerDrivenUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF580FB2983016D0039254A /* ServerDrivenUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDrivenUIApp.swift; sourceTree = "<group>"; };
 		4AF580FF298301710039254A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		4A055921298304F300E7DD85 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4A05592329830AD400E7DD85 /* NetworkManager.swift */,
 				4AF581292983021A0039254A /* FileMonitor.swift */,
 				4AF5812A2983021A0039254A /* UUIDs.swift */,
 				4AF581392983021D0039254A /* RawString.swift */,
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A05592429830AD500E7DD85 /* NetworkManager.swift in Sources */,
 				4AF5814E2983021E0039254A /* Button+Codable.swift in Sources */,
 				4AF581492983021E0039254A /* Image+Codable.swift in Sources */,
 				4AF581502983021E0039254A /* List+Codable.swift in Sources */,
