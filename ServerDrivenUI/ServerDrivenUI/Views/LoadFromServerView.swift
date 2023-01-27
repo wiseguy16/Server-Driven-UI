@@ -20,6 +20,11 @@ struct LoadFromServerView: View {
           } else {
             ProgressView()
           }
+          Button(action: {
+            loadView()
+          }, label: {
+            Text("Refresh View")
+          })
         }
       }
       .navigationTitle("View from Server")
@@ -29,6 +34,19 @@ struct LoadFromServerView: View {
         self.codableView = try await NetworkManager.load(urlString: Urls.viewUrl)
       } catch {
         debugPrint(error.localizedDescription)
+      }
+    }
+  }
+  
+  func loadView() {
+    Task {
+      do {
+        let decodedView: CodableView = try await NetworkManager.load(urlString: Urls.viewUrl)
+        await MainActor.run {
+          self.codableView = decodedView
+        }
+      } catch {
+        print(error.localizedDescription)
       }
     }
   }
